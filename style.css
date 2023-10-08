@@ -1,0 +1,187 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(1, 1, 27);
+    color:white;
+}
+.container{
+    width:90%;
+    max-width: 450px;
+
+}
+h1{
+    color:white;
+    opacity:0.75;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 1.2;
+}
+.display-container{
+position:relative;
+background-color: rgb(33, 1, 33);
+border-radius: 1rem;
+border-bottom: 0.35 solid rgba(4, 4, 4, 0.435) ;
+margin:1rem 0;
+padding-top: 0.35;
+}
+
+.display{
+    width:100%;
+    background-color: transparent;
+    padding:1.15rem 1rem;
+    color:yellow;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 30px;
+    letter-spacing: 1px;
+    padding-right: 3.25rem;
+    border:none;
+    outline:none;
+}
+
+.display::placeholder{
+    position:absolute;
+    top:50%;
+    left:1.5rem;
+    line-height: 30px;
+    color:yellow;
+    opacity:0.65;
+    text-transform: uppercase;
+   
+}
+.display-container button{
+    position:absolute;
+    top:50%;
+    right:1.5rem;
+    transform:translate(-50%);
+
+}
+.data-copy i{
+    font-size: large;
+    font-weight: 500;
+    color:white;
+}
+.data-copy{
+    background-color: rgba(4, 4, 4, 0.435) ;
+    border:none;
+}
+.input-container{
+    width:100%;
+    background-color: rgb(33, 1, 33);
+    border-radius:1rem;
+    padding:2rem;
+}
+.length-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+.length-container p:nth-child(1){
+    color:white;
+    font-size: 1.5rem;
+
+}
+.length-container p:nth-child(2){
+    color:yellow;
+    font-size: 1.5rem;
+}
+.strength-container{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-top:1.75rem;
+    margin-bottom:2rem;
+}
+.strength-container p{
+    color:white;
+    font-size:1.5rem;
+}
+.indicater{
+    width:1.5rem;
+    height:1.5rem;
+    border-radius: 50%;
+}
+.generateBtn{
+    width:100%;
+    padding:1rem 0;
+    background-color: rgb(33, 1, 33);
+    text-align:center;
+    border-radius:0.75rem;
+    border-bottom:0.35rem solid yellow;
+    font-weight:600;
+    font-size:1.25rem;
+    color:white;
+}
+
+.check{
+    display:flex;
+align-items:center;
+margin:1rem 0;
+gap:0 1rem;
+}
+.check input{
+    appearance: none;
+    width:20px;
+    height:20px;
+    border:1px solid cyan;
+    cursor:pointer;
+    position:relative;
+    border-radius:0.35rem;
+}
+.check input:checked{
+    background-color: cyan;
+}
+/* .check input :checked::before{
+    content:"*";
+    position:absolute;
+    color:white;
+    font-size: 1.05rem;
+    font-weight: 500;
+    
+} */
+.check label{
+    color:white;
+    font-size:1.25rem;
+}
+.slider{
+    appearance: none;
+    width:100%;
+    border:none;
+    cursor:pointer;
+    background-color: rgb(209, 202, 4);
+    border-radius:1rem;
+    margin-top:2rem;
+    margin-bottom:1.5rem;
+    height:0.75rem;
+    
+}
+.slider::-webkit-slider-thumb{
+    appearance: none;
+    height:2rem;
+    width:2rem;
+    border-radius:2rem;
+    background-color: yellow;
+    cursor:pointer;
+    margin-top:-3px;
+
+}
+.copyBtn{
+    background-color: transparent;
+}
+.tooltip{
+    color:white;
+    background-color: aqua;
+}
+
